@@ -1,8 +1,11 @@
 const http = require('http');
 const fs = require('fs');
-const cheerio = require('cheerio');
 const request = require('request');
 
+//  处理获取到的html，语法与jq相似
+const cheerio = require('cheerio');
+
+//  用来处理utf-8和gbk2312的中文乱码问题
 const iconv = require('iconv-lite');
 
 const url = 'http://www.mmonly.cc/ktmh/dmmn/';
